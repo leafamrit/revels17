@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="./assets/main.css" />
+<style>
+	body {
+		padding: 0;
+		margin: 0;
+		overflow-y: scroll; 
+	}
+
+	body::-webkit-scrollbar { width: 0 !important }
+	body { -ms-overflow-style: none; }
+	body { overflow: -moz-scrollbars-none; }
+
+	div {
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(30,58,38,1);
+		border: 1em solid rgba(80,54,22,1);
+		border-top: none;
+		border-bottom: none;
+		padding: 0.8em;
+	}
+
+	table {
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		font-family: 'Crayon';
+		font-size: 1.7em;
+		color: #eee;
+		border-collapse: collapse;
+	}
+
+	td {
+		/*border: 2px dashed #eee;*/
+	}
+
+	.back-button {
+		z-index: 10001;
+		padding: 0.5em;
+		background-color: rgba(20,48,28,1);
+		position: fixed;
+		top: 1.5em;
+		left: 2.5em;
+		color: #eee;
+		font-size: 1em;
+		box-shadow: 0 0 25px 2px #222;
+		border-radius: 5em;
+		font-family: 'Crayon';
+	}
+</style>
+<body>
+	<button class="back-button" onclick="window.history.back();"><-</button>
+	<div>
+		<table>
+			<tr style="height: 12%">
+				<td style="font-size: 2em;">
+					Category Name
+				</td>
+			</tr>
+			<tr style="height: 10%">
+				<td style="font-size: 1.5em;">
+					Event Name
+				</td>
+			</tr>
+			<tr>
+				<td style="font-size: 1em;">
+					This area is intended to contain details of events that you just clicked. It has been replaced with static content for the purpose of this demo.<br /><br />
+					Max Team Size: 10
+				</td>
+			</tr>
+			<tr style="height: 10%;">
+				<td style="font-size: 0.8em;">
+					This event is on day 1 of Revels'17.<br />
+					Please check schedule for more information.
+				</td>
+			</tr>
+			<tr style="height: 15%">
+				<td style="font-size: 0.8em;">
+					In case of any issues regarding this event, <br />
+					contact Pratyay Amrit on +91 9876543210
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
